@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ViewComponenet-PartialView.props" />
+</Project>

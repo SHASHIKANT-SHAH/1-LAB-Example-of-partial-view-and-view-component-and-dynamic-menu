@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "PostPage";
+    var Title = "PostPage";
+    var SubTitle = "Comments";
+    var postId = ViewBag.PostId;
+    var commentId = ViewBag.CommentId;
+}
+
+<h1>@Title</h1>
+
+@await Component.InvokeAsync("Post",new{id= postId})
+
+<h1>@SubTitle</h1>
+@await Component.InvokeAsync("Comment",new{postId=commentId})

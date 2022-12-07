@@ -1,0 +1,12 @@
+﻿<h1>Total Comment: @Model.Count</h1>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>PostId: @item.postId</li>
+        <li>Id: @item.id</li>
+        <li>Name: @item.name</li>
+        <li>Email: @item.email</li>
+        <li>Body: @item.body</li>
+        <br/>
+    }
+</ul>
